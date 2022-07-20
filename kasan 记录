@@ -1,0 +1,5 @@
+编译kasan版本代码 （配置仓中取compile.xml，编译）
+取boot.img（root包中的即可，刷入到从工程者桌面上拉下来的kasan组合包）
+编译rkasan.ko ,通过insmod将模块注入到内核中
+触发漏洞，重启，通过抓dump,获取kasan检测结果(如何不能进入dump，将lk版本还原，将img_signed中的lk.img刷入.
+总结分析kasan的发现的漏洞日志
